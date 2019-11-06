@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/tvId_spt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Id Sepatu"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/tvSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Size"
+            android:layout_below="@id/tvId_spt"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/tvColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Color"
+            android:textSize="15sp"
+            android:layout_below="@id/tvColor"
+            />
+    </RelativeLayout>
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+</LinearLayout>

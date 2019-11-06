@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_insert"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp"
+    tools:context=".InsertActivity">
+    <TextView
+        android:id="@+id/tvSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Size : "
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color : "
+        android:layout_below="@id/tvSize"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/edtSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Size"
+        android:layout_toRightOf="@+id/tvSize"
+        android:layout_alignBaseline="@+id/tvSize"/>
+    <EditText
+        android:id="@+id/edtColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Color"
+        android:layout_toRightOf="@+id/tvColor"
+        android:layout_alignBaseline="@+id/tvColor"/>
+    <LinearLayout
+        android:id="@+id/Linearlayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tvColor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/btInserting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert"/>
+        <Button
+            android:id="@+id/btBackGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"/>
+        <Button
+            android:id="@+id/btUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload"/>
+    </LinearLayout>
+
+</RelativeLayout>
